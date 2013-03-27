@@ -129,6 +129,131 @@
     <organization>
         <name>Ariadne</name>
     </organization>
+    <dependencies>
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>11.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-jaxrs</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mrbean</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-smile</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-xc</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+        <dependency>
+            <groupId>jaxen</groupId>
+            <artifactId>jaxen</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>1.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.parboiled</groupId>
+            <artifactId>parboiled-core</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.parboiled</groupId>
+            <artifactId>parboiled-java</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>xalan</groupId>
+            <artifactId>xalan</artifactId>
+            <version>2.7.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>1.6.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.libphonenumber</groupId>
+            <artifactId>libphonenumber</artifactId>
+            <version>4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4.4</version>
+        </dependency>
+        <dependency>
+            <groupId>rhino</groupId>
+            <artifactId>js</artifactId>
+            <version>1.7R2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ietf</groupId>
+            <artifactId>mimedir</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesimpl</artifactId>
+            <version>2.9.1</version>
+        </dependency>
+        <!--
+activation-1.1.jar - 100% OK
+AriadneNextUtils.jar 
+asm-3.3.1.jar - Not needed because included by parboiled-java-1.0.2
+guava-11.0.1.jar - 100% OK
+jackson-all-1.9.4.jar - 90% OK I cannot find a single file containing all the things so cannot check sha1 however all the classes seem to be there.
+jaxen-1.1.1.jar - 100% OK
+jdom.jar - Not needed because included by jaxen-1.1.1.  However, this file is a little bit different.  The original jdom.jar has 1 more class file.
+joda-time-1.6.jar - 100% OK
+js.jar - 50% - The manifest file of the original mentions 1.7R2.  However the sha1 is different and so is the number of files and size of the jar file.
+libphonenumber-4.5.jar - 75% OK - Sha1 is different and so is the number of files.
+mail.jar - 90% OK - Sha1 is different but looks the same.
+MimeDir.jar - 50% - The manifest file of the original mentions 1.7R2.  However the sha1 is different and so is the number of files and size of the jar file.
+parboiled-core-1.0.2.jar - 90% OK - Sha1 is different but number of files is identical.
+parboiled-java-1.0.2.jar - 90% OK - Sha1 is different but number of files is identical.
+serializer.jar
+slf4j-api-1.6.4.jar - 90% OK - Sha1 is different but number of files is identical.
+slf4j-nop-1.6.4.jar - 90% OK - Sha1 is different but number of files is identical.
+vcard4j.jar - 
+xalan.jar - The original is 2.7.1 but the one included by jaxen-1.1.1 is 2.6.0.  So I have added xalan-2.7.1 in the dependencies.
+xercesImpl.jar - 90% OK - Sha1 is different but number of files is identical.
+
+        -->
+    </dependencies>
 </project>
 
 
