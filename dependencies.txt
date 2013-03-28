@@ -1,0 +1,42 @@
+Notes about the dependencies after mavenizing the module
+========================================================
+
+In order to mavenize the module, I had to declare the required dependencies.  Some of the jar files in the lib folder have no version in their name and no additional information in their manifest file.  In such cases, it's quite hard to guess which version of the jar file was used.  The following chart gives the level of confidence that I have chosen the right dependency for each jar file included in the lib folder.
+
+                               % of 
+Jar file                    confidence   Details
+--------------------------+------------+---------------------------------------------------------------------
+activation-1.1.jar        |    100%    | Identical sha1 checksum
+jaxen-1.1.1.jar           |    100%    |     "       "     "
+joda-time-1.6.jar         |    100%    |     "       "     "
+guava-11.0.1.jar          |    100%    |     "       "     "
+vcard4j.jar               |    100%    | I could not find this file on external Maven servers 
+                          |            | so it's hosted as is on our Maven server.
+slf4j-api-1.6.4.jar       |     90%    | Different sha1 checksum but content of jar files looks identical.
+slf4j-nop-1.6.4.jar       |     90%    |     "       "      "     "     "     "  "    "     "        "
+mail.jar                  |     90%    |     "       "      "     "     "     "  "    "     "        "
+parboiled-core-1.0.2.jar  |     90%    |     "       "      "     "     "     "  "    "     "        "
+parboiled-java-1.0.2.jar  |     90%    |     "       "      "     "     "     "  "    "     "        "
+serializer.jar            |     90%    |     "       "      "     "     "     "  "    "     "        "
+xercesImpl.jar            |     90%    |     "       "      "     "     "     "  "    "     "        "
+jackson-all-1.9.4.jar     |     90%    | I could not find a single jar file containing all the classes.
+                          |            | I had to include many dependencies individually.  All the 
+                          |            | seem to be there.
+xalan.jar                 |     90%    | jaxen-1.1.1 already requires xalan-2.6.0 but as the original
+                          |            | xalan file seems to be 2.7.1, I have declared it explicitly.
+asm-3.3.1.jar             |     90%    | Not needed because already included by parboiled-java-1.0.2.
+AriadneNextUtils.jar      |     90%    | I could not find this class on external Maven servers
+                          |            | so a version of this file is hosted on our Maven server.
+                          |            | However, this version requireѕ dependencies, and again, 
+                          |            | as the version of the jar files is not always easy to guess,
+                          |            | it's possible that the declared dependencies are faulty.
+jdom.jar                  |     75%    | Not needed because already included by jaxen-1.1.1.
+                          |            | However, this file is a little bit different.
+                          |            | The original jdom.jar has 1 more class file.
+libphonenumber-4.5.jar    |     75%    | The version is the same but the sha1 checksum differs and so
+                          |            | is the content of the jar file.  Number of classes contained
+                          |            | in the jar file differs significantly.
+MimeDir.jar               |     50%    | Different sha1 checksum and significantly different content.
+js.jar                    |     50%    | Different sha1 checksum and significantly different content.
+
+I have tested the validation API summarily.  It's quite possible that some problems occur at runtime because of the wrong dependency.  Keep that in mind when using this module.

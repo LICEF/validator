@@ -13,122 +13,34 @@
     <version>${project.parent.version}</version>
 
     <build>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>process-resources</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>resources</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
-                <!-- For extracting common configuration -->
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <!-- Special case needed for ant compile -->
-                        <id>config-unpack</id>
-                        <phase>clean</phase>
-                        <goals>
-                            <goal>unpack</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>config-unpack-for-compile</id>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>unpack</goal>
-                        </goals>
-                        <configuration>
-                            <artifactItems>
-                                <artifactItem>
-                                    <groupId>ca.licef.comete</groupId>
-                                    <artifactId>comete-config</artifactId>
-                                    <version>${parent.version}</version>
-                                </artifactItem>
-                            </artifactItems>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>properties-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>config-read</id>
-                        <phase>clean</phase>
-                        <goals>
-                            <goal>read-project-properties</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>config-read-for-compile</id>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>read-project-properties</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.1</version>
                 <configuration>
-                    <files>
-                        <file>${project.build.directory}/dependency/build.properties</file>
-                    </files>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.6</version>
                 <executions>
                     <execution>
-                        <id>compile</id>
-                        <phase>compile</phase>
-                        <configuration>
-                            <target>
-                                <property name="build.compiler" value="extJavac" />
-                                <ant antfile="build.xml" target="target.dist" />
-                            </target>
-                        </configuration>
+                        <phase>package</phase>
                         <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>clean</id>
-                        <phase>clean</phase>
-                        <configuration>
-                            <target>
-                                <ant antfile="build.xml" target="clean" />
-                            </target>
-                        </configuration>
-                        <goals>
-                            <goal>run</goal>
+                            <goal>single</goal>
                         </goals>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
     </build>
+
     <url>http://ariadne.cs.kuleuven.be/validationService/about.jsp</url>
+
     <organization>
         <name>Ariadne</name>
     </organization>
+
     <dependencies>
         <dependency>
             <groupId>javax.activation</groupId>
@@ -196,6 +108,11 @@
             <version>2.7.1</version>
         </dependency>
         <dependency>
+            <groupId>xalan</groupId>
+            <artifactId>serializer</artifactId>
+            <version>2.7.1</version>
+        </dependency>
+        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.6.4</version>
@@ -230,31 +147,20 @@
             <artifactId>xercesimpl</artifactId>
             <version>2.9.1</version>
         </dependency>
-        <!--
-activation-1.1.jar - 100% OK
-AriadneNextUtils.jar 
-asm-3.3.1.jar - Not needed because included by parboiled-java-1.0.2
-guava-11.0.1.jar - 100% OK
-jackson-all-1.9.4.jar - 90% OK I cannot find a single file containing all the things so cannot check sha1 however all the classes seem to be there.
-jaxen-1.1.1.jar - 100% OK
-jdom.jar - Not needed because included by jaxen-1.1.1.  However, this file is a little bit different.  The original jdom.jar has 1 more class file.
-joda-time-1.6.jar - 100% OK
-js.jar - 50% - The manifest file of the original mentions 1.7R2.  However the sha1 is different and so is the number of files and size of the jar file.
-libphonenumber-4.5.jar - 75% OK - Sha1 is different and so is the number of files.
-mail.jar - 90% OK - Sha1 is different but looks the same.
-MimeDir.jar - 50% - The manifest file of the original mentions 1.7R2.  However the sha1 is different and so is the number of files and size of the jar file.
-parboiled-core-1.0.2.jar - 90% OK - Sha1 is different but number of files is identical.
-parboiled-java-1.0.2.jar - 90% OK - Sha1 is different but number of files is identical.
-serializer.jar
-slf4j-api-1.6.4.jar - 90% OK - Sha1 is different but number of files is identical.
-slf4j-nop-1.6.4.jar - 90% OK - Sha1 is different but number of files is identical.
-vcard4j.jar - 
-xalan.jar - The original is 2.7.1 but the one included by jaxen-1.1.1 is 2.6.0.  So I have added xalan-2.7.1 in the dependencies.
-xercesImpl.jar - 90% OK - Sha1 is different but number of files is identical.
-
-        -->
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesimpl</artifactId>
+            <version>2.9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>ariadne</groupId>
+            <artifactId>ariadne-next-utils</artifactId>
+            <version>826</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.vcard4j</groupId>
+            <artifactId>vcard4j</artifactId>
+            <version>unknown</version>
+        </dependency>
     </dependencies>
 </project>
-
-
-
