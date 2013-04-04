@@ -34,7 +34,6 @@ public class ValidateFrameworkExample {
 
     public static void main(String[] args) throws IOException {
 
-System.out.println( "start" );        
         //String profileUri = "http://info.mace-project.eu/validation/MACEv4.4"; // MaceFull
         //String profileUri = "http://ltsc.ieee.org/xsd/LOM/strict";
         String profileUri = "http://ltsc.ieee.org/xsd/LOM/loose";
@@ -44,22 +43,18 @@ System.out.println( "start" );
          * @param String : the absolute or relative path to the ariadneV4.properties file
          */
         Validator.getPropertiesManager().init("ariadneV4.properties");
-System.out.println( "init done" );        
 
         Validator validator = Validator.getValidator();
-System.out.println( "validator="+validator );        
         try {
             /**
              * Use this call to update the Validation Schemes from the ARIADNE server
              */
-            Validator.updatePropertiesFileFromRemote();
-System.out.println( "props updated" );            
+            // Validator.updatePropertiesFileFromRemote();
 
             /**
              * Call to initialize the validation schemes
              */
             validator.initFromPropertiesManager();
-System.out.println( "validator inited" );            
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
