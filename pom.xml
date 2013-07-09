@@ -189,5 +189,10 @@
             <artifactId>vcard4j</artifactId>
             <version>unknown</version>
         </dependency>
+        <dependency>
+            <groupId>ca.licef.validator</groupId>
+            <artifactId>NormeticValidator</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 </project>
