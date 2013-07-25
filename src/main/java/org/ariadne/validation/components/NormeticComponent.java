@@ -18,6 +18,8 @@ public class NormeticComponent extends ValidationComponent {
     public void validate( String metadata ) throws ValidationException {
         ValidationReport report = null;
         try {
+            validator = new NormeticValidator();
+            validator.setSchematronValidationLessNoisy( true );
             report = validator.validate( metadata );
         }
         catch( Exception e ) {
@@ -44,6 +46,6 @@ public class NormeticComponent extends ValidationComponent {
     public void init( String name, Hashtable<String,String> table ) throws InitialisationException {
     }
 
-    private static NormeticValidator validator = new NormeticValidator();
+    private static NormeticValidator validator = null;
 
 }
