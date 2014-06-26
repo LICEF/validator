@@ -23,7 +23,12 @@ jackson-all-1.9.4.jar     |     90%    | I could not find a single jar file cont
                           |            | I had to include many dependencies individually.  All the 
                           |            | seem to be there.
 xalan.jar                 |     90%    | jaxen-1.1.1 already requires xalan-2.6.0 but as the original
-                          |            | xalan file seems to be 2.7.1, I have declared it explicitly.
+                          |            | xalan file seems to be 2.7.1.
+                          |            | Originally, I had declared 2.7.1 explicitly but after doing
+                          |            | some tests on Jetty, the Xalan jar file was causing problems.
+                          |            | Finally, I have removed it explicitly using an exclusion and
+                          |            | and everything works fine.  Go figure.
+                          |            | However, if I remove it, no errors occur.
 asm-3.3.1.jar             |     90%    | Not needed because already included by parboiled-java-1.0.2.
 AriadneNextUtils.jar      |     90%    | I could not find this class on external Maven servers
                           |            | so a version of this file is hosted on our Maven server.
