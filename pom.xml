@@ -5,7 +5,7 @@
     <artifactId>validator</artifactId>
     <packaging>jar</packaging>
     <name>Validator</name>
-    <version>0.2.0</version>
+    <version>0.2.1</version>
     <description>Validator for metadata records against application profiles.  
         Based on original code from Ariadne of the ValidationFramework project.</description>
     <url>https://github.com/LICEF/validator.git</url>
