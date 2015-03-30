@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ca.licef.comete</groupId>
+    <groupId>ca.licef</groupId>
     <artifactId>validator</artifactId>
     <packaging>jar</packaging>
     <name>Validator</name>
@@ -69,7 +69,6 @@
                 </executions>
             </plugin>
             <!-- Useful to test the validator as a standalone application. -->
-            <!-- Remove it when the integration to Comete is done. - FB -->
             <!--plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
