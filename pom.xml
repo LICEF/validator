@@ -234,4 +234,17 @@
         </repository>
     </repositories>
 
+    <distributionManagement>
+        <repository>
+            <id>licef</id>
+            <name>licef-releases</name>
+            <url>http://hades.licef.ca:8080/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>licef</id>
+            <name>licef-snapshots</name>
+            <url>http://hades.licef.ca:8080/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>
