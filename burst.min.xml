@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:swrc="http://swrc.ontoware.org/ontology#" xmlns:burst="http://xmlns.com/burst/0.1/">
+  <channel rdf:about="http://www.cs.kuleuven.be/publicaties/lirias/">
+    <title>HMDB K.U.Leuven Publications</title>
+    <link>http://hmdb.cs.kuleuven.be/</link>
+    <description>Hypermedia and Databases</description>
+    <dc:date>20130-07-15T00:05:16+01:00</dc:date>
+    <dc:publisher>K.U.Leuven</dc:publisher>
+    <items>
+      <rdf:Seq>
+        <rdf:li rdf:resource="https://lirias.kuleuven.be/handle/123456789/158236" />
+        <rdf:li rdf:resource="https://lirias.kuleuven.be/handle/123456789/158918" />
+        <rdf:li rdf:resource="https://lirias.kuleuven.be/handle/123456789/234783" />
+        <rdf:li rdf:resource="https://lirias.kuleuven.be/handle/123456789/255730" />
+        <rdf:li rdf:resource="https://lirias.kuleuven.be/handle/123456789/256477" />
+      </rdf:Seq>
+    </items>
+  </channel>
+  <item rdf:about="https://lirias.kuleuven.be/handle/123456789/158236" xml:lang="en">
+    <title xml:lang="en">Open metadata for open educational resources in an open infrastructure</title>
+    <description xml:lang="en">Open metadata for open educational resources in an open infrastructure</description>
+    <link>https://lirias.kuleuven.be/handle/123456789/158236</link>
+    <dc:date>2010-04-28T11:20:02+01:00</dc:date>
+    <burst:publication>
+      <swrc:InProceedings>
+        <swrc:title>Open metadata for open educational resources in an open infrastructure</swrc:title>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Duval, Erik</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Ternier, Stefaan</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Wolpers, Martin</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Najjar, Jehad</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Vandeputte, Bram</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Verbert, Katrien</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Klerkx, Joris</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Meire, Michael</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Ochoa, Xavier</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:year>2007</swrc:year>
+        <swrc:booktitle>Proceedings of the OpenLearn2007 conference: researching open content in education</swrc:booktitle>
+        <swrc:publisher>Open University</swrc:publisher>
+        <swrc:atEvent>OpenLearn2007 conference</swrc:atEvent>
+        <swrc:keywords>learning object, learning object metadata</swrc:keywords>
+        <swrc:pages>36-38</swrc:pages>
+        <dc:spatial>Milton Keynes, UK</dc:spatial>
+      </swrc:InProceedings>
+    </burst:publication>
+  </item>
+  <item rdf:about="https://lirias.kuleuven.be/handle/123456789/158918" xml:lang="en">
+    <title xml:lang="en">Unifying learning object repositories in MACE</title>
+    <description xml:lang="en">Unifying learning object repositories in MACE</description>
+    <link>https://lirias.kuleuven.be/handle/123456789/158918</link>
+    <dc:date>2010-04-28T11:20:02+01:00</dc:date>
+    <burst:publication>
+      <swrc:InProceedings>
+        <swrc:title>Unifying learning object repositories in MACE</swrc:title>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Prause, Christian</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Ternier, Stefaan</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>de Jong, Tim</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Apelt, Stefan</swrc:name>
+            <swrc:affiliation>Fraunhofer FIT</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Scholten, Marius</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Wolpers, Martin</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Eisenhauer, Markus</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Vandeputte, Bram</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Specht, Marcus</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Duval, Erik</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:year>2007</swrc:year>
+        <swrc:month>9</swrc:month>
+        <swrc:date>2001-1-49</swrc:date>
+        <swrc:booktitle>Learning Object Discovery &amp; Exchange 2007</swrc:booktitle>
+        <swrc:publisher>CEUR</swrc:publisher>
+        <swrc:atEvent>International Workshop on Learning Object Discovery &amp; Exchange (LODE 2007)</swrc:atEvent>
+        <swrc:keywords>repository federation, metadata, learning objects, mace, learning object repository</swrc:keywords>
+        <dc:spatial>Crete, Greece</dc:spatial>
+      </swrc:InProceedings>
+    </burst:publication>
+  </item>
+  <item rdf:about="https://lirias.kuleuven.be/handle/123456789/234783" xml:lang="en">
+    <title xml:lang="en">The Ariadne infrastructure for managing and storing metadata</title>
+    <description xml:lang="en">The Ariadne infrastructure for managing and storing metadata</description>
+    <link>https://lirias.kuleuven.be/handle/123456789/234783</link>
+    <dc:date>2010-04-28T11:20:02+01:00</dc:date>
+    <burst:publication>
+      <swrc:Article>
+        <swrc:title>The Ariadne infrastructure for managing and storing metadata</swrc:title>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Ternier, Stefaan</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Verbert, Katrien</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Parra, Gonzalo</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Vandeputte, Bram</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Klerkx, Joris</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Duval, Erik</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Ordóñez, Vicente</swrc:name>
+            <swrc:affiliation>ESPOL</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Ochoa, Xavier</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:year>2009</swrc:year>
+        <swrc:month>6</swrc:month>
+        <swrc:booktitle>IEEE internet computing</swrc:booktitle>
+        <swrc:publisher>IEEE Computer Society Publications Office</swrc:publisher>
+        <swrc:keywords>learning object metadata, learning object repositories, federated search, harvesting</swrc:keywords>
+      </swrc:Article>
+    </burst:publication>
+  </item>
+  <item rdf:about="https://lirias.kuleuven.be/handle/123456789/255730" xml:lang="en">
+    <title xml:lang="en">Bridging repositories to form the MACE experience</title>
+    <description xml:lang="en">Bridging repositories to form the MACE experience</description>
+    <link>https://lirias.kuleuven.be/handle/123456789/255730</link>
+    <dc:date>2010-04-28T11:20:02+01:00</dc:date>
+    <burst:publication>
+      <swrc:Article>
+        <swrc:title>Bridging repositories to form the MACE experience</swrc:title>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Wolpers, Martin</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Memmel, Martin</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Klerkx, Joris</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Parra Chico, Gonzalo</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Vandeputte, Bram</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Duval, Erik</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Schirru, Rafael</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Niemann, Katja</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:year>2009</swrc:year>
+        <swrc:month>11</swrc:month>
+        <swrc:booktitle>New Review of Information Networking</swrc:booktitle>
+        <swrc:publisher>Taylor &amp; Francis</swrc:publisher>
+        <swrc:pages>102-116</swrc:pages>
+        <swrc:volume>14</swrc:volume>
+      </swrc:Article>
+    </burst:publication>
+  </item>
+  <item rdf:about="https://lirias.kuleuven.be/handle/123456789/256477" xml:lang="en">
+    <title xml:lang="en">Experiences with the Learning Resource Exchange for schools in Europe</title>
+    <description xml:lang="en">Experiences with the Learning Resource Exchange for schools in Europe</description>
+    <link>https://lirias.kuleuven.be/handle/123456789/256477</link>
+    <dc:date>2010-04-28T11:20:02+01:00</dc:date>
+    <burst:publication>
+      <swrc:Article>
+        <swrc:title>Experiences with the Learning Resource Exchange for schools in Europe</swrc:title>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Baumgartner, Peter</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Vuorikari, Riina</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Van Assche, Frans</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Duval, Erik</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Zens, Birgit</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Massart, David</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Vandeputte, Bram</swrc:name>
+            <swrc:affiliation>Katholieke Universiteit Leuven, Belgium</swrc:affiliation>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:author>
+          <swrc:Person>
+            <swrc:name>Mesdom, Fernand</swrc:name>
+          </swrc:Person>
+        </swrc:author>
+        <swrc:year>2009</swrc:year>
+        <swrc:month>12</swrc:month>
+        <swrc:booktitle>eLearning Papers</swrc:booktitle>
+        <swrc:publisher>elearningeuropa.info</swrc:publisher>
+        <swrc:keywords>learning object repositories</swrc:keywords>
+      </swrc:Article>
+    </burst:publication>
+  </item>
+</rdf:RDF>
+

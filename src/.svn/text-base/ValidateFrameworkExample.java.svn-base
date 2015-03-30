@@ -1,0 +1,79 @@
+import java.io.IOException;
+
+import org.ariadne.util.JDomUtils;
+import org.ariadne.validation.Validator;
+import org.ariadne.validation.exception.ValidationException;
+import org.ariadne.validation.utils.ValidationUtils;
+
+
+public class ValidateFrameworkExample {
+
+
+	static String lomxml = "<LOM xmlns=\"http://ltsc.ieee.org/xsd/LOM\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://ltsc.ieee.org/xsd/LOM http://ltsc.ieee.org/xsd/lomv1.0/20040413/lom.xsd\">" +
+	"<General><identifier><catalog>vgrfvr</catalog><entry>vgrfvr</entry></identifier><title><string language=\"en\">test123</string></title></General>" +
+	"<lifeCycle> <contribute> <role> <source>LOMv1.0</source> <value>validator</value> </role> " +
+	"<entity>BEGIN:vCard" +
+	"\nVersion:3.0" +
+	"\nFN:Roedy Green" +
+	"\nN:Green;Roedy" +
+	"\nEND:vCard</entity> </contribute> </lifeCycle>" +
+	"<metaMetadata>" +
+	"<contribute><date><dateTime>2007-01-01T00:00:00.0Z</dateTime></date>" +
+	"<role><source>LOMv1.0</source><value>creator</value></role></contribute>" +
+	"</metaMetadata>" +
+	"<technical><location></location></technical></LOM>";
+
+	public static void main(String[] args) throws IOException {
+
+		String maceFull = "http://info.mace-project.eu/validation/MACEv4.4";
+
+		/**
+		 * Initialize the properties manager.
+		 * @param String : the absolute or relative path to the ariadneV4.properties file
+		 */
+		Validator.getPropertiesManager().init("ariadneV4.properties");
+
+		Validator validator = Validator.getValidator();
+		try {
+			/**
+			 * Use this call to update the Validation Schemes from the ARIADNE server
+			 */
+			Validator.updatePropertiesFileFromRemote();
+
+			/**
+			 * Call to initialize the validation schemes
+			 */
+			validator.initFromPropertiesManager();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+		/**
+		 * Retrieve the available validations schemes
+		 */
+		
+		System.out.println(ValidationUtils.getValidationSchemes());
+		
+		try {
+			/**
+			 * Validate the metadata against a validation scheme
+			 */
+			validator.validateMetadata(lomxml, maceFull);
+			System.out.println("validation OK");
+		} catch (ValidationException e) {
+			/**
+			 * Retrieve each exception separately
+			 */
+			for(String exception : e.getAllExceptions()) {
+				System.out.println("ValidationException : ");
+				System.out.println(exception);
+				System.out.println();
+			}
+			/**
+			 * Or get the validation exceptions back as an xml file
+			 */
+			System.out.println(JDomUtils.parseXml2string(ValidationUtils.collectErrorsAsXml(e.getMessage()),null));
+			
+		}
+	}
+}

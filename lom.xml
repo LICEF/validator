@@ -1,0 +1,226 @@
+<lom:lom xmlns="http://ltsc.ieee.org/xsd/LOM" xmlns:lom="http://ltsc.ieee.org/xsd/LOM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM http://ltsc.ieee.org/xsd/lomv1.0/lom.xsd">
+  <lom:general>
+    <lom:identifier xmlns="http://ltsc.ieee.org/xsd/LOM">
+      <lom:catalog>oai</lom:catalog>
+      <lom:entry>oai:archiplanet.org:ap_44629</lom:entry>
+    </lom:identifier>
+    <lom:identifier>
+      <lom:catalog>ARCHIPLANET.ORG</lom:catalog>
+      <lom:entry>ap_44629</lom:entry>
+    </lom:identifier>
+    <lom:title>
+      <lom:string language="en">Boone Bridge</lom:string>
+    </lom:title>
+    <lom:language>en</lom:language>
+    <lom:description>
+      <lom:string language="en">Buildings in Boone, Iowa, USA; National Register of Historic Places Highway Bridges of Iowa MPS, type of building: Transportation</lom:string>
+    </lom:description>
+    <mace:learningObjectKind xmlns:mace="http://www.mace-project.eu/xsd/LOM">
+      <mace:source>MACEv1.0</mace:source>
+      <mace:value>media object</mace:value>
+    </mace:learningObjectKind>
+  </lom:general>
+  <lom:metaMetadata>
+    <lom:identifier xmlns="http://ltsc.ieee.org/xsd/LOM">
+      <lom:catalog>oai</lom:catalog>
+      <lom:entry>oai:archiplanet.org:ap_44629</lom:entry>
+    </lom:identifier>
+    <lom:identifier>
+      <lom:catalog>ARCHIPLANET.ORG</lom:catalog>
+      <lom:entry>ap_44629</lom:entry>
+    </lom:identifier>
+    <lom:contribute>
+      <lom:role>
+        <lom:source>MACEv1.0</lom:source>
+        <lom:value>provider</lom:value>
+      </lom:role>
+      <lom:entity><![CDATA[BEGIN:VCARD
+FN:ARCHIPLANET
+N:ARCHIPLANET
+ORG:ARCHIPLANET
+VERSION:3.0
+END:VCARD]]></lom:entity>
+      <lom:date>
+        <lom:dateTime>2008-12-09T02:37:26.0Z</lom:dateTime>
+      </lom:date>
+    </lom:contribute>
+    <lom:language>en</lom:language>
+    <lom:contribute xmlns="http://ltsc.ieee.org/xsd/LOM">
+      <lom:entity><![CDATA[BEGIN:VCARD
+FN:ARCHIPLANET.ORG
+N:ARCHIPLANET.ORG
+ORG:ARCHIPLANET.ORG
+VERSION:3.0
+END:VCARD]]></lom:entity>
+      <lom:role>
+        <lom:value>provider</lom:value>
+        <lom:source>MACEv1.0</lom:source>
+      </lom:role>
+      <lom:date>
+        <lom:dateTime>2009-07-14T05:44:32.32Z</lom:dateTime>
+      </lom:date>
+    </lom:contribute>
+    <lom:contribute xmlns="http://ltsc.ieee.org/xsd/LOM">
+      <lom:entity><![CDATA[BEGIN:VCARD
+FN:ArchiPlanet
+N:ArchiPlanet
+ORG:ArchiPlanet
+VERSION:3.0
+END:VCARD]]></lom:entity>
+      <lom:role>
+        <lom:value>provider</lom:value>
+        <lom:source>MACEv1.0</lom:source>
+      </lom:role>
+      <lom:date>
+        <lom:dateTime>2009-08-13T12:23:49.68Z</lom:dateTime>
+      </lom:date>
+    </lom:contribute>
+    <contribute>
+      <role>
+        <source>MACEv1.0</source>
+        <value>subject matter expert</value>
+      </role>
+      <entity><![CDATA[BEGIN:VCARD
+FN:klaus kaiser
+N:kaiser;klaus;;;
+NICKNAME:kaiser
+VERSION:3.0
+END:VCARD]]></entity>
+      <date>
+        <dateTime>2009-10-06T06:41:25.589Z</dateTime>
+      </date>
+    </contribute>
+    <contribute>
+      <role>
+        <source>MACEv1.0</source>
+        <value>subject matter expert</value>
+      </role>
+      <entity><![CDATA[BEGIN:VCARD
+FN:klaus kaiser
+N:kaiser;klaus;;;
+NICKNAME:kaiser
+VERSION:3.0
+END:VCARD]]></entity>
+      <date>
+        <dateTime>2009-10-06T06:42:28.45Z</dateTime>
+      </date>
+    </contribute>
+  </lom:metaMetadata>
+  <lom:technical>
+    <lom:format>text/html</lom:format>
+    <lom:size>1114</lom:size>
+    <lom:location>http://www.archiplanet.org/wiki/Boone_Bridge</lom:location>
+  </lom:technical>
+  <lom:rights>
+    <lom:cost>
+      <lom:source>LOMv1.0</lom:source>
+      <lom:value>no</lom:value>
+    </lom:cost>
+    <lom:copyrightAndOtherRestrictions>
+      <lom:source>LOMv1.0</lom:source>
+      <lom:value>yes</lom:value>
+    </lom:copyrightAndOtherRestrictions>
+    <lom:description>
+      <lom:string language="en">Content is released under Creative Commons Attribution/Share-Alike License 3.0 (Unported) (CC-BY-SA) (http://creativecommons.org/licenses/by-sa/3.0/)</lom:string>
+    </lom:description>
+  </lom:rights>
+  <lom:classification>
+    <lom:purpose>
+      <lom:source>MACEv1.0</lom:source>
+      <lom:value>Technical design</lom:value>
+    </lom:purpose>
+    <lom:taxonPath>
+      <lom:source>
+        <lom:string language="en">MACE Material Catalog</lom:string>
+      </lom:source>
+      <lom:taxon>
+        <lom:id>material100</lom:id>
+        <lom:entry>
+          <lom:string language="en">Concrete</lom:string>
+        </lom:entry>
+      </lom:taxon>
+    </lom:taxonPath>
+  </lom:classification>
+  <lom:classification>
+    <lom:purpose>
+      <lom:source>MACEv1.0</lom:source>
+      <lom:value>Technical design</lom:value>
+    </lom:purpose>
+    <lom:taxonPath>
+      <lom:source>
+        <lom:string language="en">MACE Material Catalog</lom:string>
+      </lom:source>
+      <lom:taxon>
+        <lom:id>material380</lom:id>
+        <lom:entry>
+          <lom:string language="en">Steel</lom:string>
+        </lom:entry>
+      </lom:taxon>
+    </lom:taxonPath>
+  </lom:classification>
+  <lom:classification>
+    <lom:purpose>
+      <lom:source>MACEv1.0</lom:source>
+      <lom:value>Conceptual design</lom:value>
+    </lom:purpose>
+    <lom:taxonPath>
+      <lom:source>
+        <lom:string language="en">MACE Material Catalog</lom:string>
+      </lom:source>
+      <lom:taxon>
+        <lom:id>theoreticalConcepts3870</lom:id>
+        <lom:entry>
+          <lom:string language="en">Transportation</lom:string>
+        </lom:entry>
+      </lom:taxon>
+    </lom:taxonPath>
+    <taxonPath>
+      <source>
+        <string>MACE Functional Typology Catalog</string>
+      </source>
+      <taxon>
+        <id>functionalTdypology750</id>
+        <entry>
+          <string>bridge</string>
+        </entry>
+      </taxon>
+    </taxonPath>
+    <taxonPath>
+      <source>
+        <string>MACE Functional Typology Catalog</string>
+      </source>
+      <taxon>
+        <id>functionalfTypology680</id>
+        <entry>
+          <string>monuments</string>
+        </entry>
+      </taxon>
+    </taxonPath>
+  </lom:classification>
+  <lom:classification>
+    <lom:purpose>
+      <lom:source>LOMv1.0</lom:source>
+      <lom:value>competency</lom:value>
+    </lom:purpose>
+    <lom:taxonPath>
+      <lom:source>
+        <lom:string language="en">MACE Competence Catalogue</lom:string>
+      </lom:source>
+      <lom:taxon>
+        <lom:id>1</lom:id>
+        <lom:entry>
+          <lom:string language="en">Architecture Competency Classification</lom:string>
+        </lom:entry>
+      </lom:taxon>
+      <lom:taxon>
+        <lom:id>102</lom:id>
+        <lom:entry>
+          <lom:string language="en">Knowledge of History</lom:string>
+        </lom:entry>
+        <mace:mineqf xmlns:mace="http://www.mace-project.eu/xsd/MACE">1</mace:mineqf>
+        <mace:maxeqf xmlns:mace="http://www.mace-project.eu/xsd/MACE">8</mace:maxeqf>
+      </lom:taxon>
+    </lom:taxonPath>
+  </lom:classification>
+</lom:lom>
+

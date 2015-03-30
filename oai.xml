@@ -1,0 +1,222 @@
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2009-03-11T14:11:34Z</responseDate>
+  <request identifier="oai:ariadne.cs.kuleuven.be:BLKLKP1382" verb="GetRecord" metadataPrefix="oai_lom">http://ariadne.cs.kuleuven.be/oaitarget/OAIHandler</request>
+  <GetRecord>
+    <record>
+      <header>
+        <identifier>oai:ariadne.cs.kuleuven.be:BLKLKP1382</identifier>
+        <datestamp>2002-04-12T10:11:30Z</datestamp>
+      </header>
+      <metadata>
+        <lom xmlns="http://ltsc.ieee.org/xsd/LOM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM http://ltsc.ieee.org/xsd/lomv1.0/lom.xsd">
+          <general>
+            <identifier>
+              <catalog>ARIADNE</catalog>
+              <entry>BLKLKP1382</entry>
+            </identifier>
+            <title>
+              <string language="nl">USER INTERFACES AND "USABILITY ENGINEERING"</string>
+            </title>
+            <language>nl</language>
+            <keyword>
+              <string language="nl">human computer interaction</string>
+            </keyword>
+            <keyword>
+              <string language="nl">user interfaces</string>
+            </keyword>
+            <keyword>
+              <string language="nl">hci</string>
+            </keyword>
+            <keyword>
+              <string language="nl">chi</string>
+            </keyword>
+            <aggregationLevel>
+              <source>LOMv1.0</source>
+              <value>2</value>
+            </aggregationLevel>
+          </general>
+          <lifeCycle>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>author</value>
+              </role>
+              <entity><![CDATA[BEGIN:VCARD
+FN:ERIK DUVAL
+N:DUVAL;ERIK
+VERSION:3.0
+END:VCARD]]></entity>
+            </contribute>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>publisher</value>
+              </role>
+              <entity><![CDATA[BEGIN:VCARD
+FN:ARIADNE
+N:ARIADNE
+ORG:ARIADNE
+VERSION:3.0
+END:VCARD]]></entity>
+              <date>
+                <dateTime>1999-10-14T23:00:00.00Z</dateTime>
+              </date>
+            </contribute>
+          </lifeCycle>
+          <metaMetadata>
+            <identifier>
+              <catalog>ARIADNE</catalog>
+              <entry>BLKLKP1382</entry>
+            </identifier>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>creator</value>
+              </role>
+              <entity><![CDATA[BEGIN:VCARD
+FN:Lenka Duli
+N:Duli;Lenka
+VERSION:3.0
+END:VCARD]]></entity>
+              <date>
+                <dateTime>2000-03-02T23:00:00.00Z</dateTime>
+              </date>
+            </contribute>
+            <metadataSchema>ARIADNEv1.0</metadataSchema>
+            <language>nl</language>
+          </metaMetadata>
+          <technical>
+            <format>text/html</format>
+            <size>161792</size>
+            <location>http://ariadne.cs.kuleuven.be/silo2006/getLO.jsp?ID=BLKLKP1382</location>
+            <requirement>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>operating system</value>
+                </type>
+                <name>
+                  <source>LOMv1.0</source>
+                  <value>multi-os</value>
+                </name>
+              </orComposite>
+            </requirement>
+          </technical>
+          <educational>
+            <interactivityType>
+              <source>LOMv1.0</source>
+              <value>expositive</value>
+            </interactivityType>
+            <learningResourceType>
+              <source>LOMv1.0</source>
+              <value>slide</value>
+            </learningResourceType>
+            <intendedEndUserRole>
+              <source>LOMv1.0</source>
+              <value>learner</value>
+            </intendedEndUserRole>
+            <context>
+              <source>LOMv1.0</source>
+              <value>higher education</value>
+            </context>
+            <typicalAgeRange>
+              <string>18-U</string>
+            </typicalAgeRange>
+            <difficulty>
+              <source>LOMv1.0</source>
+              <value>easy</value>
+            </difficulty>
+            <typicalLearningTime>
+              <duration>PT45M</duration>
+            </typicalLearningTime>
+          </educational>
+          <rights>
+            <cost>
+              <source>LOMv1.0</source>
+              <value>no</value>
+            </cost>
+            <copyrightAndOtherRestrictions>
+              <source>LOMv1.0</source>
+              <value>yes</value>
+            </copyrightAndOtherRestrictions>
+            <description>
+              <string language="x-t-cc-url">http://creativecommons.org/licenses/by-nc-sa/3.0/</string>
+            </description>
+          </rights>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>discipline</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">ARIADNE</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="it">Cienze Esatte, Naturale ed Ingenieria</string>
+                  <string language="de">Grund, Natur und Ingenieur Wissenschatfen</string>
+                  <string language="nl">Exacte, Natuur- en Ingenieurswetenschappen</string>
+                  <string language="en">Exact, Natural and Engineering Sciences</string>
+                  <string language="es">Sciencias Exactas, Naturales e ingenieria</string>
+                  <string language="fr">Sciences Exactes, Naturelles et de l'Inginieur</string>
+                  <string language="ro">Stiinte exacte, naturale si ingineresti</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="it">Informatica</string>
+                  <string language="de">Informatik/Datenverarbeitung</string>
+                  <string language="en">Informatics/Information Processing</string>
+                  <string language="es">Informatica/Procesamiento de la informacion</string>
+                  <string language="nl">Informatica/Informatieverwerking</string>
+                  <string language="fr">Informatique/Traitement de l'Information</string>
+                  <string language="ro">Informatica/Tratarea informatiei</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="it">Generalita/Varie</string>
+                  <string language="de">Allgemein/Verschiedenes</string>
+                  <string language="fr">Generalites/Divers</string>
+                  <string language="en">General/Sundry</string>
+                  <string language="es">Generalidades/Varios</string>
+                  <string language="nl">Algemeen/Diversen</string>
+                  <string language="ro">Generalitati/Diverse</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="nl">human computer interaction</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational level</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">ARIADNE</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="de">Universitaetdiplom</string>
+                  <string language="en">University Degree</string>
+                  <string language="es">Estudios universitarios</string>
+                  <string language="fr">Etudes universitaires</string>
+                  <string language="ja">????</string>
+                  <string language="nl">Universitair</string>
+                  <string language="ro">Înv???mânt universitar</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+        </lom>
+      </metadata>
+    </record>
+  </GetRecord>
+</OAI-PMH>
+

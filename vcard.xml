@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+	<lifeCycle>
+		<contribute>
+
+      <entity><![CDATA[BEGIN:VCARD
+
+VERSION:3.0
+
+
+N:Deilmann\,Clemens
+
+END:VCARD]]></entity>  
+
+
+		</contribute>
+
+	</lifeCycle>
+
+</lom>

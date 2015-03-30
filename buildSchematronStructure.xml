@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<project name="SchematronGen" default="target.dist" basedir=".">
+	<target name="target.dist">
+		<java fork="true" classname="SchematronStructureGenerator">
+			<arg value="iso/ICOPER/"/>
+			<arg value="IcoperCoreSchematron.structure.xml"/>
+			<arg value="IcoperCoreSchematron.sch"/>
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java>
+		<java fork="true" classname="SchematronStructureGenerator">
+			<arg value="iso/ICOPER/"/>
+			<arg value="IcoperRecommendedSchematron.structure.xml"/>
+			<arg value="IcoperRecommendedSchematron.sch"/>
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java>
+		<java fork="true" classname="SchematronStructureGenerator">
+			<arg value="iso/NaturalEurope/"/>
+			<arg value="NaturalEuropeCoreSchematron.structure.xml"/>
+			<arg value="NaturalEuropeCoreSchematron.sch"/>
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java>
+	</target>
+</project>

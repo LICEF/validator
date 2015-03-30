@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<project name="validationFramework" default="target.dist" basedir=".">
+	<property name="lib.dir" value="${basedir}/lib"/>
+	<property name="src.dir" value="${basedir}/src"/>
+	<property name="build.dir" value="${basedir}/build"/>
+	<property name="dist.dir" value="${basedir}/dist"/>
+	<property name="dist.build.dir" value="${dist.dir}/build"/>
+	<property name="dist.jar" value="SimpleValidation.jar"/>
+	<property name="prop.file" value="validation.properties"/>
+	<target name="clean">
+		<delete dir="${dist.dir}"/>
+	</target>
+	<target name="compile">
+		<mkdir dir="${build.dir}"/>
+		<javac srcdir="${src.dir}" debug="yes" destdir="${build.dir}" includes="org/ariadne/**" target="1.5" source="1.5">
+			<classpath>
+				<fileset dir="${lib.dir}">
+					<include name="*.jar"/>
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+	<target name="copy.props">
+		<copy file="${prop.file}" tofile="ariadneV4.properties"/>
+	</target>
+	<target name="target.dist" depends="clean,compile,copy.props">
+		<mkdir dir="${dist.build.dir}"/>
+		<copy todir="${dist.build.dir}" filtering="no">
+			<fileset dir="${build.dir}">
+				<include name="**/*.class"/>
+			</fileset>
+		</copy>
+		<delete dir="${build.dir}"/>
+		<jar destfile="${dist.dir}/${dist.jar}" basedir="${dist.build.dir}">
+			<manifest>
+				<attribute name="Built-By" value="${user.name}"/>
+			</manifest>
+		</jar>
+		<copy todir="/work/builds" filtering="no">
+			<fileset dir="${dist.dir}">
+				<include name="${dist.jar}"/>
+			</fileset>
+		</copy>
+	</target>
+	<target name="target.dist.standalone" depends="clean,compile,copy.props">
+		<mkdir dir="${dist.build.dir}"/>
+		<copy todir="${dist.build.dir}/lib" filtering="no">
+			<fileset dir="${lib.dir}">
+				<include name="*.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="${dist.build.dir}" filtering="no">
+			<fileset dir="${build.dir}">
+				<include name="**/*.class"/>
+			</fileset>
+		</copy>
+		<delete dir="${build.dir}"/>
+		<jar destfile="${dist.dir}/${dist.jar}" basedir="${dist.build.dir}">
+			<manifest>
+				<attribute name="Built-By" value="${user.name}"/>
+			</manifest>
+		</jar>
+		<copy todir="/work/builds" filtering="no">
+			<fileset dir="${dist.dir}">
+				<include name="${dist.jar}"/>
+			</fileset>
+		</copy>
+	</target>
+	<target name="deploy" depends="target.dist">
+		<copy todir="/work/workspaces/workspace/OaiHarvester/WEB-INF/lib/" overwrite="yes" filtering="no">
+			<fileset dir="${dist.dir}">
+				<include name="${dist.jar}"/>
+			</fileset>
+		</copy>
+		<copy todir="/work/workspaces/workspace/validationService/WEB-INF/lib/" overwrite="yes" filtering="no">
+			<fileset dir="${dist.dir}">
+				<include name="${dist.jar}"/>
+			</fileset>
+			<fileset dir="${lib.dir}">
+				<include name="*.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="/work/workspaces/workspace/validationService/install/" overwrite="yes" filtering="no">
+			<fileset dir="${basedir}">
+				<include name="*.properties"/>
+			</fileset>
+		</copy>
+	</target>
+</project>

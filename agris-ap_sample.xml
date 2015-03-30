@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ags:resources SYSTEM "http://purl.org/agmes/agrisap/dtd/">
+
+<ags:resources xmlns:ags="http://purl.org/agmes/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:agls="http://www.naa.gov.au/recordkeeping/gov_online/agls/1.2" xmlns:dcterms="http://purl.org/dc/terms/">
+<ags:resource ags:ARN="NL2004700134">
+<dc:title xml:lang="eng">Effect of oxidation ditch horizontal velocity on the nitrogen removal process</dc:title>
+<dc:creator>
+<ags:creatorPersonal>Abusam, A.</ags:creatorPersonal>
+<ags:creatorPersonal>Keesman, K.J.</ags:creatorPersonal>
+<ags:creatorPersonal>Spanjers, H.</ags:creatorPersonal>
+</dc:creator>
+<dc:date>
+<dcterms:dateIssued>2002</dcterms:dateIssued>
+</dc:date>
+<dc:subject>
+<ags:subjectClassification scheme="ags:ASC">P10</ags:subjectClassification>
+<ags:subjectThesaurus xml:lang="eng" scheme="ags:CABT">WASTE WATER</ags:subjectThesaurus>
+<ags:subjectThesaurus xml:lang="eng" scheme="ags:CABT">NITRATES</ags:subjectThesaurus>
+<ags:subjectThesaurus xml:lang="eng" scheme="ags:CABT">REMOVAL</ags:subjectThesaurus>
+<ags:subjectThesaurus xml:lang="eng" scheme="ags:CABT">PERFORMANCE</ags:subjectThesaurus>
+</dc:subject>
+<dc:description>
+<ags:descriptionNotes>12 refs</ags:descriptionNotes>
+</dc:description>
+<dc:identifier scheme="dcterms:URI">http://www.ewaonline.de/journal/2002_06.pdf</dc:identifier>
+<dc:format>
+<dcterms:extent>p. 213</dcterms:extent>
+<dcterms:medium>internet</dcterms:medium>
+</dc:format>
+<dc:language scheme="ags:ISO639-1">en</dc:language>
+<agls:availability>
+<ags:availabilityLocation>Library Wageningen University and Research Centre, Postbus 9100, 6703 BK Wageningen ub.library@wur.nl http://library.wur.nl/desktop/</ags:availabilityLocation>
+<ags:availabilityNumber>1700134</ags:availabilityNumber>
+</agls:availability>
+<ags:citation>
+<ags:citationTitle xml:lang="eng">European water management online</ags:citationTitle>
+<ags:citationChronology>2002</ags:citationChronology>
+</ags:citation>
+</ags:resource>
+</ags:resources>

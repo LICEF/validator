@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<project name="SchematronGen" default="target.dist" basedir=".">
+	<target name="target.dist">
+		<!--java fork="true" classname="AspectVocabGenerator">
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java-->
+		
+		<!-- ASPECT -->
+		<java fork="true" classname="VocmanVocabGenerator">
+			<arg value="/work/projects/ASPECT/vocab/"/>
+			<arg value="/work/validationService/resources/schematron/iso/ASPECT/vocab/"/>
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java>
+		<java fork="true" classname="SchematronGeneratorV2">
+			<arg value="iso/ASPECT/"/>
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java>
+
+			<!-- ASPECT DEPRECATED -->
+			<java fork="true" classname="VocmanVocabGenerator">
+				<arg value="/work/projects/ASPECT/vocab-deprecated/"/>
+				<arg value="/work/validationService/resources/schematron/iso/ASPECT/vocab-deprecated/"/>
+				<classpath>
+					<pathelement location="lib/MimeDir.jar"/>
+					<pathelement location="lib/AriadneNextUtils.jar"/>
+					<pathelement location="lib/xalan.jar"/>
+					<pathelement location="lib/serializer.jar"/>
+					<pathelement location="lib/jdom.jar"/>
+					<pathelement location="lib/jaxen-1.1.1.jar"/>
+					<pathelement location="lib/xercesImpl.jar"/>
+					<pathelement location="lib/activation-1.1.jar"/>
+					<pathelement location="lib/vcard4j.jar"/>
+					<pathelement location="bin/"/>
+				</classpath>
+			</java>
+			<java fork="true" classname="SchematronGeneratorV2">
+				<arg value="iso/ASPECT/"/>
+				<arg value="check-vocabs-deprecated.sch"/>
+				<arg value="vocab-deprecated/"/>
+				<classpath>
+					<pathelement location="lib/MimeDir.jar"/>
+					<pathelement location="lib/AriadneNextUtils.jar"/>
+					<pathelement location="lib/xalan.jar"/>
+					<pathelement location="lib/serializer.jar"/>
+					<pathelement location="lib/jdom.jar"/>
+					<pathelement location="lib/jaxen-1.1.1.jar"/>
+					<pathelement location="lib/xercesImpl.jar"/>
+					<pathelement location="lib/activation-1.1.jar"/>
+					<pathelement location="lib/vcard4j.jar"/>
+					<pathelement location="bin/"/>
+				</classpath>
+			</java>
+		
+		<!-- LOM Strict -->
+		<java fork="true" classname="SchematronGeneratorV2">
+			<arg value="iso/LOM/"/>
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java>
+		
+		<!-- MACE -->
+		<java fork="true" classname="MaceVocabGenerator">
+			<arg value="/work/projects-archive/MACE/vocab/"/>
+			<arg value="/work/validationService/resources/schematron/iso/MACE/vocab/"/>
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java>
+		<java fork="true" classname="SchematronGeneratorV2">
+			<arg value="iso/MACE/"/>
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java>
+		
+		<!-- ICOPER -->
+		<java fork="true" classname="SchematronStructureGenerator">
+			<arg value="iso/ICOPER/"/>
+			<arg value="IcoperCoreSchematron.structure.xml"/>
+			<arg value="IcoperCoreSchematron.sch"/>
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java>
+		<java fork="true" classname="SchematronStructureGenerator">
+			<arg value="iso/ICOPER/"/>
+			<arg value="IcoperRecommendedSchematron.structure.xml"/>
+			<arg value="IcoperRecommendedSchematron.sch"/>
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java>
+		<java fork="true" classname="IcoperVocabGenerator">
+			<arg value="/work/projects/ICOPER/vocab/"/>
+			<arg value="/work/validationService/resources/schematron/iso/ICOPER/vocab/"/>
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java>
+		<java fork="true" classname="SchematronGeneratorV2">
+			<arg value="iso/ICOPER/"/>
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java>
+		
+		<!-- OrganicEdunet -->
+		<java fork="true" classname="SchematronGeneratorV2">
+			<arg value="iso/OrganicEdunet/"/>
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java>
+		
+		<!-- NaturalEurope -->
+		<java fork="true" classname="SchematronGeneratorV2">
+			<arg value="iso/NaturalEurope/"/>
+			<classpath>
+				<pathelement location="lib/MimeDir.jar"/>
+				<pathelement location="lib/AriadneNextUtils.jar"/>
+				<pathelement location="lib/xalan.jar"/>
+				<pathelement location="lib/serializer.jar"/>
+				<pathelement location="lib/jdom.jar"/>
+				<pathelement location="lib/jaxen-1.1.1.jar"/>
+				<pathelement location="lib/xercesImpl.jar"/>
+				<pathelement location="lib/activation-1.1.jar"/>
+				<pathelement location="lib/vcard4j.jar"/>
+				<pathelement location="bin/"/>
+			</classpath>
+		</java>
+		
+	</target>
+</project>

@@ -1,0 +1,47 @@
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM http://ltsc.ieee.org/xsd/lomv1.0/lom.xsd">
+  <general>
+    <identifier>
+      <catalog>rice.iuav.it</catalog>
+      <entry>24</entry>
+    </identifier>
+    <title>
+      <string language="it">Architettura peripatetica</string>
+    </title>
+    <keyword>
+      <string language="it">ICAR/14 Composizione architettonica e urbana</string>
+    </keyword>
+    <language>it</language>
+    <mace:learningObjectKind xmlns:mace="http://www.mace-project.eu/xsd/LOM">
+      <mace:source>MACEv1.0</mace:source>
+      <mace:value>media object</mace:value>
+    </mace:learningObjectKind>
+  </general>
+  <lifeCycle>
+    <contribute>
+      <role>
+        <source>LOMv1.0</source>
+        <value>author</value>
+      </role>
+      <entity><![CDATA[BEGIN:VCARD
+FN:Renato Bocchi
+N:Bocchi;Renato
+VERSION:3.0
+END:VCARD]]></entity>
+      <date>
+        <dateTime>2006-01-01T00:00:00.000+01:00</dateTime>
+      </date>
+    </contribute>
+  </lifeCycle>
+  <metaMetadata>
+    <identifier>
+      <catalog>rice.iuav.it</catalog>
+      <entry>24</entry>
+    </identifier>
+    <language>en</language>
+  </metaMetadata>
+  <technical>
+    <location>http://rice.iuav.it/24/1/PITTORI.pdf</location>
+    <format>application/pdf</format>
+  </technical>
+</lom>
+

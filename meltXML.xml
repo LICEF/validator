@@ -1,0 +1,205 @@
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM http://ltsc.ieee.org/xsd/lomv1.0/lom.xsd">
+  <General>
+    <identifier>
+
+    </identifier>
+    <title>
+      <string language="it">PRINCIPI DI CODIFICA SICURA: RASSEGNA DELLE TECNICHE DI CODIFICA</string>
+    </title>
+    <language>it</language>
+    <description>
+      <string language="it">Please contact Prof. Baiardi Fabrizio :  credits@unipi.it</string>
+    </description>
+    <keyword>
+      <string language="it">codifica</string>
+    </keyword>
+  </General>
+  <lifeCycle>
+    <contribute>
+      <role>
+        <source>LOMv1.0</source>
+        <value>author</value>
+      </role>
+      <entity><![CDATA[BEGIN:VCARD
+FN:PROF. BAIARDI FABRIZIO
+N:FABRIZIO;PROF. BAIARDI
+VERSION:3.0
+END:VCARD]]></entity>
+      <date>
+        <dateTime>2000-05-14T22:00:00.00Z</dateTime>
+      </date>
+    </contribute>
+    <contribute>
+      <role>
+        <source>LOMv1.0</source>
+        <value>author</value>
+      </role>
+      <entity><![CDATA[BEGIN:VCARD
+FN:PROF. LUCCIO FABRIZIO
+N:FABRIZIO;PROF. LUCCIO
+VERSION:3.0
+END:VCARD]]></entity>
+      <date>
+        <dateTime>2000-05-14T22:00:00.00Z</dateTime>
+      </date>
+    </contribute>
+    <contribute>
+      <role>
+        <source>LOMv1.0</source>
+        <value>publisher</value>
+      </role>
+      <entity><![CDATA[BEGIN:VCARD
+FN:ARIADNE
+N:ARIADNE
+ORG:ARIADNE
+VERSION:3.0
+END:VCARD]]></entity>
+      <date>
+        <dateTime>1997-11-14T23:00:00.00Z</dateTime>
+      </date>
+    </contribute>
+  </lifeCycle>
+  <metaMetadata>
+    <identifier>
+      <catalog>ARIADNE</catalog>
+      <entry>BLKLKP1569</entry>
+    </identifier>
+    <contribute>
+      <role>
+        <source>LOMv1.0</source>
+        <value>creator</value>
+      </role>
+      <entity><![CDATA[BEGIN:VCARD
+FN:Giorgio Da Bormida
+N:Da Bormida;Giorgio
+VERSION:3.0
+END:VCARD]]></entity>
+      <date>
+        <dateTime>2002-04-12T08:11:30.00Z</dateTime>
+      </date>
+    </contribute>
+    <metadataSchema>MELTv1.1</metadataSchema>
+    <language>it</language>
+  </metaMetadata>
+  <technical>
+    <format>application/x-qdf</format>
+    <size>4096</size>
+    <location>http://ariadne.cs.kuleuven.be/silo2006/getLO.jsp?ID=BLKLKP1569</location>
+    <requirement>
+      <orComposite>
+        <type>
+          <source>LOMv1.0</source>
+          <value>operating system</value>
+        </type>
+        <name>
+          <source>LOMv1.0</source>
+          <value>multi-os</value>
+        </name>
+      </orComposite>
+    </requirement>
+  </technical>
+  <educational>
+    <interactivityType>
+      <source>LOMv1.0</source>
+      <value>active</value>
+    </interactivityType>
+    <learningResourceType>
+      <source>LOMv1.0</source>
+      <value>Bram</value>
+    </learningResourceType>
+    <intendedEndUserRole>
+      <source>LOMv1.0</source>
+      <value>learner</value>
+    </intendedEndUserRole>
+    <context>
+      <source>LOMv1.0</source>
+      <value>higher education</value>
+    </context>
+    <typicalAgeRange>
+      <string language="x-t-lre">18-U</string>
+    </typicalAgeRange>
+    <difficulty>
+      <source>LOMv1.0</source>
+      <value>medium</value>
+    </difficulty>
+  </educational>
+  <rights>
+    <cost>
+      <source>LOMv1.0</source>
+      <value>no</value>
+    </cost>
+    <copyrightAndOtherRestrictions>
+      <source>LOMv1.0</source>
+      <value>yes</value>
+    </copyrightAndOtherRestrictions>
+    <description>
+      <string language="x-t-cc-url">http://creativecommons.org/licenses/by-nc-sa/3.0/</string>
+    </description>
+  </rights>
+  <classification>
+    <purpose>
+      <source>LOMv1.0</source>
+      <value>discipline</value>
+    </purpose>
+    <taxonPath>
+      <source>
+        <string language="en">ARIADNE</string>
+      </source>
+      <taxon>
+        <entry>
+          <string language="it">Cienze Esatte, Naturale ed Ingenieria</string>
+          <string language="nl">Exacte, Natuur- en Ingenieurswetenschappen</string>
+          <string language="es">Sciencias Exactas, Naturales e ingenieria</string>
+          <string language="ro">Stiinte exacte, naturale si ingineresti</string>
+          <string language="en">Exact, Natural and Engineering Sciences</string>
+          <string language="de">Grund, Natur und Ingenieur Wissenschatfen</string>
+          <string language="fr">Sciences Exactes, Naturelles et de l'Inginieur</string>
+        </entry>
+      </taxon>
+      <taxon>
+        <entry>
+          <string language="it">Informatica</string>
+          <string language="ro">Informatica/Tratarea informatiei</string>
+          <string language="de">Informatik/Datenverarbeitung</string>
+          <string language="nl">Informatica/Informatieverwerking</string>
+          <string language="es">Informatica/Procesamiento de la informacion</string>
+          <string language="fr">Informatique/Traitement de l'Information</string>
+          <string language="en">Informatics/Information Processing</string>
+        </entry>
+      </taxon>
+      <taxon>
+        <entry>
+          <string language="it">Generalita/Varie</string>
+          <string language="en">General/Sundry</string>
+          <string language="es">Generalidades/Varios</string>
+          <string language="ro">Generalitati/Diverse</string>
+          <string language="nl">Algemeen/Diversen</string>
+          <string language="fr">Generalites/Divers</string>
+          <string language="de">Allgemein/Verschiedenes</string>
+        </entry>
+      </taxon>
+      <taxon>
+        <entry>
+          <string language="it">codifica</string>
+        </entry>
+      </taxon>
+    </taxonPath>
+  </classification>
+  <classification>
+    <purpose>
+      <source>LOMv1.0</source>
+      <value>discipline</value>
+    </purpose>
+    <taxonPath>
+      <source>
+        <string language="en">LRE Thesaurus</string>
+      </source>
+      <taxon>
+        <id>999999</id>
+        <entry>
+          <string language="en">Bram science</string>
+        </entry>
+      </taxon>
+    </taxonPath>
+  </classification>
+</lom>
