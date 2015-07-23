@@ -5,7 +5,7 @@
     <artifactId>validator</artifactId>
     <packaging>jar</packaging>
     <name>Validator</name>
-    <version>0.2.1</version>
+    <version>0.2.2</version>
     <description>Validator for metadata records against application profiles.  
         Based on original code from Ariadne of the ValidationFramework project.</description>
     <url>https://github.com/LICEF/validator.git</url>
@@ -104,32 +104,32 @@
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-core-asl</artifactId>
-            <version>1.9.4</version>
+            <version>1.9.13</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-jaxrs</artifactId>
-            <version>1.9.4</version>
+            <version>1.9.13</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
-            <version>1.9.4</version>
+            <version>1.9.13</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mrbean</artifactId>
-            <version>1.9.4</version>
+            <version>1.9.13</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-smile</artifactId>
-            <version>1.9.4</version>
+            <version>1.9.13</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-xc</artifactId>
-            <version>1.9.4</version>
+            <version>1.9.13</version>
         </dependency>
         <dependency>
             <groupId>jaxen</groupId>
